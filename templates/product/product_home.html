@@ -1,0 +1,36 @@
+<script type="text/template" id="product_template_home" class="hidden">
+    <!-- <div class="col-md-8"> -->
+          <div class="col-md-2 col-sm-6 col-xs-12">
+                <div class="cuadro-box-pro-planes">
+                  <div align="center">
+                    <p class="inf-plan ellipsis multiline">{{! name }}</p>
+                    <hr class="box-planes">
+                    <div class="up-plan"> {{! upp }}</div>
+                    <div class="product-price-plan">{{! main_price|money }} </div>
+                    <hr class="box-planes-bot">
+                    <div class="up-plan-bot"> {{! upp }}</div>
+                    <img src="{{! images[0]['thumb_200'] }}" alt="" class="img-2" >
+                    <a href="{{ site_base }}/sc/plans/detail/{{! name|friendly }}/{{! id }}">
+                    <button type="button" class="btn btn-warning pro">MÁS INFORMACIÓN</button>
+                    </a>
+                    <button 
+                        type="button" 
+                        class="btn add-to-cart btn-default carr" 
+                        id="open-cart" 
+                        data-toggle="modal" 
+                        data-target="#myModal"
+                        product-upp="{{! upp }}"
+                        product-name="{{! name }}"
+                        product-price="{{! main_price }}"
+                        product-sku="{{! sku }}"
+                        product-id="{{! id }}"
+                        product-img="{{! images[0]['thumb_200'] }}"
+                        lp-cart-add >AÑADIR AL CARRO
+                    </button>
+                  </div>
+                </div>
+               
+          </div>   
+     
+  <!--   </div> -->
+</script>
