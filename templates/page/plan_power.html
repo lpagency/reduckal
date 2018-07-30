@@ -11,19 +11,19 @@
 {% block javascript %}
 <script type="text/javascript">
 
-  $(document).ready(function() 
+  $(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.planes').addClass("active");
 
   });
-    
+
     $(document).ready(function()
     {
 
       $("#OpenAlert").click();
 
-        var app_public = $.environmentVar(4,4,4);
+        var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
         var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -35,7 +35,7 @@
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
         var config = {
             'app_public' : app_public,
@@ -57,7 +57,7 @@
         // $('.product-list2').ecommerce('product_box', config);
     });
 </script>
- 
+
  <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
@@ -82,7 +82,7 @@
            <div class="texto-light text-center {{editabletext}}" text-id="{{ site.name + '_plan_power' }}"> {{ read_text(site.name +  '_plan_power') }}</div>
            <hr class="plan">
         </div>
-    
+
     <!-- **cuadritos planes** -->
     <div align="center">
       <div class="col-md-3 col-sm-4">
@@ -119,7 +119,7 @@
 
    </div>
    <div class="col-md-12 text-center">
-     <button type="button" class="btn btn-info new">Volver a otros planes</button>  
+     <button type="button" class="btn btn-info new">Volver a otros planes</button>
 </div>
 
  </div>

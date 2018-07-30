@@ -9,14 +9,14 @@
 {% end %}
 {% block javascript %}
 <script type="text/javascript">
-$(document).ready(function() 
+$(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.planes').addClass("active");
 
     // $("#OpenAlert").click();
 
-    var app_public = $.environmentVar(4,4,4);
+    var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -28,7 +28,7 @@ $(document).ready(function()
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
     $(document).ecommerce({
         'app_public' : app_public,
@@ -46,7 +46,7 @@ $(document).ready(function()
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com');
-    // var app_public = $.environmentVar(4, 4, 4);
+    // var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     // var config = {
     //     'app_public': app_public,
     //     'base_url': base_url,
@@ -92,7 +92,7 @@ $(document).ready(function()
                 </div>
             </div>
         </div>
-    
+
 
 
       <div class="col-md-12">
@@ -168,7 +168,7 @@ $(document).ready(function()
                    <div class="fas-qu {{editabletext}}" text-id="{{ site.name + '_w_1_1' }}"> {{ read_text(site.name +  '_w_1_1') }} </div>
                   <div class="day-qu {{editabletext}}" text-id="{{ site.name + '_w_2_1' }}"> {{ read_text(site.name +  '_w_2_1') }} </div>
                </div>
-              
+
 
                <div class="col-md-12 col-sm-12 col-xs-12">
                  <hr class="for-plan-q">
@@ -217,7 +217,7 @@ $(document).ready(function()
                         </div>
                         {% end %}
                         <img id="{{ site.name }}_25" src="{{ read_image(site.name + '_25', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_25',500) }}'" class="ico-for-qu" alt="item" />
-                  <!-- <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->  
+                  <!-- <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->
                    <div class="fas-qu {{editabletext}}" text-id="{{ site.name + '_4563' }}"> {{ read_text(site.name +  '_4563') }}</div>
                   <div class="day-qu {{editabletext}}" text-id="{{ site.name + '_qeqe' }}"> {{ read_text(site.name +  '_qeqe') }} </div>
                </div>
@@ -231,11 +231,11 @@ $(document).ready(function()
                         </div>
                         {% end %}
                         <img id="{{ site.name }}_26" src="{{ read_image(site.name + '_26', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_26',500) }}'" class="ico-for-qu" alt="item" />
-                 <!--  <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->  
+                 <!--  <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->
                    <div class="fas-qu {{editabletext}}" text-id="{{ site.name + '_def3_2' }}"> {{ read_text(site.name +  '_def3_2') }}</div>
                   <div class="day-qu {{editabletext}}" text-id="{{ site.name + '_s_1_2' }}"> {{ read_text(site.name +  '_s_1_2') }}</div>
                </div>
-             
+
 
                <div class="col-md-12 col-sm-12 col-xs-12">
                   <hr class="for-plan-q">
@@ -255,7 +255,7 @@ $(document).ready(function()
                         <img id="{{ site.name }}_ci" src="{{ read_image(site.name + '_ci', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_ci',500) }}'" class="ico-rep-qu" alt="item" />
                   <!--  <img class="ico-rep-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png">  -->
                </div>
-                
+
                 <div class="col-md-6 col-sm-6">
                     <div class="text-rep-qu {{editabletext}}" text-id="{{ site.name + '_56_1' }}"> {{ read_text(site.name +  '_56_1') }} </div>
                </div>
@@ -282,7 +282,7 @@ $(document).ready(function()
         </div>
 
      </div>
-    
+
 </section>
 
 

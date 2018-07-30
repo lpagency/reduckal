@@ -11,13 +11,13 @@
 {% block javascript %}
 <script type="text/javascript">
 
-  $(document).ready(function() 
+  $(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.planes').addClass("active");
 
   });
-    var app_public = $.environmentVar(4,4,4);
+    var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -29,7 +29,7 @@
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
     $(document).ecommerce({
         'app_public' : app_public,
@@ -47,7 +47,7 @@
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com');
-    // var app_public = $.environmentVar(4, 4, 4);
+    // var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     // var config = {
     //     'app_public': app_public,
     //     'base_url': base_url,
@@ -69,7 +69,7 @@
     // $('.product-list2').ecommerce('product_box', config);
 
 </script>
- 
+
  <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
@@ -97,7 +97,7 @@
            <div class="tor"> | </div>
             <div class="precio-new text-center {{editabletext}}" text-id="{{ site.name + '_lani_3_3' }}"> {{ read_text(site.name +  '_lani_3_3') }}</div>
         </div>
-    
+
     <!-- **cuadritos planes** -->
  <div align="center">
         <div class="col-md-3 col-sm-12">
@@ -114,14 +114,14 @@
         </div>
         {% end %}
         <img id="{{ site.name }}_7070_5" src="{{ read_image(site.name + '_7070_5', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_7070_5',500) }}'" class="img-plan ot" alt="item" />
-             <!-- <img class="img-plan" src="https://84static.loadingplay.com/static/images/0c3e586ccd2d51fcf5bcc0db3e0180cd_naranja-rueda-de-colores.png">   -->       
+             <!-- <img class="img-plan" src="https://84static.loadingplay.com/static/images/0c3e586ccd2d51fcf5bcc0db3e0180cd_naranja-rueda-de-colores.png">   -->
             <!--   <hr class="sun">
               <div class="tex-or-2 {{editabletext}}" text-id="{{ site.name + '_vi_11' }}"> {{ read_text(site.name +  '_vi_11') }}</div> -->
               <hr class="sun">
                <div class="tex-or-3 {{editabletext}}" text-id="{{ site.name + '_vi_12' }}"> {{ read_text(site.name +  '_vi_12') }}</div>
            </div>
          <!--     <button type="button" class="btn btn-primary more-2">Más información</button> -->
-        </div>  
+        </div>
         <div class="col-md-8 col-sm-12">
             <div align="center">
               <div class="box-gray-new">
@@ -185,7 +185,7 @@
                    <div class="fa-l {{editabletext}}" text-id="{{ site.name + '_tu_9' }}"> {{ read_text(site.name +  '_tu_9') }} </div>
                   <div class="da-l {{editabletext}}" text-id="{{ site.name + '_tu_10' }}"> {{ read_text(site.name +  '_tu_10') }} </div>
                </div>
-             
+
 
                <div class="col-md-12 col-sm-12 col-xs-12">
                   <hr class="lu-l">
@@ -234,7 +234,7 @@
                         </div>
                         {% end %}
                         <img id="{{ site.name }}_tu_7" src="{{ read_image(site.name + '_tu_7', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_tu_7',500) }}'" class="ico-fu-l" alt="item" />
-                  <!-- <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->  
+                  <!-- <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->
                    <div class="fa-l {{editabletext}}" text-id="{{ site.name + '_tu_17' }}"> {{ read_text(site.name +  '_tu_17') }}</div>
                   <div class="da-l {{editabletext}}" text-id="{{ site.name + '_tu_18' }}"> {{ read_text(site.name +  '_tu_18') }} </div>
                </div>
@@ -248,11 +248,11 @@
                         </div>
                         {% end %}
                         <img id="{{ site.name }}_tu_8" src="{{ read_image(site.name + '_tu_8', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_tu_8',500) }}'" class="ico-fu-l" alt="item" />
-                 <!--  <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->  
+                 <!--  <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->
                    <div class="fa-l {{editabletext}}" text-id="{{ site.name + '_tu_19' }}"> {{ read_text(site.name +  '_tu_19') }}</div>
                   <div class="da-l {{editabletext}}" text-id="{{ site.name + '_tu_20' }}"> {{ read_text(site.name +  '_tu_20') }}</div>
                </div>
-           
+
 
                <div class="col-md-12 col-sm-12 col-xs-12">
                     <hr class="lu-l">
@@ -264,7 +264,7 @@
                       <button type="button" class="btn btn-warning mad-2 comprar-btn" quantity="150" plan="quick+">COMPRA TU PLAN</button>
                   <!--   <button type="button" class="btn btn-warning mad-1 comprar-btn pack-listo" quantity="50" plan="light">COMPRAR PLAN</button> -->
                   </div>
-          
+
 
                     <!-- <div class="acept">Acepto cumplir con las condiciones para realizar el METÓDO RKD </div> -->
 
@@ -273,7 +273,7 @@
                </div>
 
 
-            </div>  
+            </div>
 </div>
 
       </div>

@@ -39,7 +39,7 @@
 
     $(document).ready(function()
     {
-        var app_public = $.environmentVar(4,4,4);
+        var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
         var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -51,7 +51,7 @@
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
         $('.product-detail').ecommerce('product_detail', {
             'app_public' : app_public,
@@ -82,7 +82,7 @@
                     'onLoad':function(){
                          $('.ellipsis').ellipsis();
                      }
-                
+
             };
             $('.product-related').ecommerce('product_box', config);
         };
@@ -123,14 +123,14 @@
                     <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                 </li>
                 <!-- **nueve** -->
-               
+
             </ul>
         </div>
     </div>
-     
+
 
          <div class="col-md-8">
-                 <div class="box-det"> 
+                 <div class="box-det">
                        <div class="col-md-6 col-sm-4 col-xs-12">
                        <img src="{{! images[0]['thumb_200'] }}" title="" alt="" class="img_prod_detail">
                        </div>
@@ -142,7 +142,7 @@
                                      <div class="vert-align s-b">Sobres</div>
                                      <div class="pal-2">| </div>
                                      <div class="product-price-2">{{! main_price|money }} </div>
-                                    <h3 class="descr_prod_detail ellipsis multiline"> 
+                                    <h3 class="descr_prod_detail ellipsis multiline">
                                    {{! description }}</h3>
                                     <button
                                     type="button"
@@ -158,7 +158,7 @@
                                     product-weight="{{! weight }}"
                                     lp-cart-add
                                     >AGREGAR AL CARRO</button>
-                         
+
                             </div>
                        </div>
                  </div>

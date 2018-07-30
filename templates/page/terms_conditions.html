@@ -19,14 +19,14 @@
 <script type="text/javascript" src="{{ site_base }}/static/js/plugins/fancybox/jquery.fancybox.js"></script>
 <script type="text/javascript" src="{{ site_base }}/static/js/plans.js"></script>
 <script type="text/javascript">
-$(document).ready(function() 
+$(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.inicio').addClass("active");
 
     // $("#OpenAlert").click();
 
-    var app_public = $.environmentVar(4,4,4);
+    var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -38,7 +38,7 @@ $(document).ready(function()
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
     $(document).ecommerce({
         'app_public' : app_public,
@@ -56,7 +56,7 @@ $(document).ready(function()
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com');
-    // var app_public = $.environmentVar(4, 4, 4);
+    // var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     // var config = {
     //     'app_public': app_public,
     //     'base_url': base_url,

@@ -9,7 +9,7 @@
 {% end %}
 {% block javascript %}
 <script type="text/javascript">
-  $(document).ready(function() 
+  $(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.blog').addClass("active");
@@ -18,13 +18,13 @@
 </script>
 
 <script type="text/javascript">
-$(document).ready(function() 
+$(document).ready(function()
 {
 
 
     // $("#OpenAlert").click();
 
-    var app_public = $.environmentVar(4,4,4);
+    var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -36,7 +36,7 @@ $(document).ready(function()
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     $(document).ecommerce({
         'app_public' : app_public,
         'animation' : 'simple',
@@ -57,7 +57,7 @@ $(document).ready(function()
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com');
-    // var app_public = $.environmentVar(4, 4, 4);
+    // var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     // var config = {
     //     'app_public': app_public,
     //     'base_url': base_url,
@@ -113,12 +113,12 @@ $(document).ready(function()
                         <img id="{{ site.name }}_conse_1" src="{{ read_image(site.name + '_conse_1', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_conse_1',500) }}'" class="img-consejos" alt="item" />
                          <!--  <img class="img-consejos" src="" > -->
                       </div>
-      
+
                    <div class="col-md-6">
                        <div class="con-1 {{editabletext}}" text-id="{{ site.name + '_til_conse' }}"> {{ read_text(site.name +  '_til_conse') }} </div>
                        <div class="con-2 ellipsis multiline {{editabletext}}" text-id="{{ site.name + '_til_con_' }}"> {{ read_text(site.name +  '_til_con_') }}</div>
                     </div>
-        
+
                        <div class="col-md-12 col-sm-12 col-xs-12">
                           <hr class="one-blog">
                        </div>
@@ -136,12 +136,12 @@ $(document).ready(function()
                         <img id="{{ site.name }}_conse_2" src="{{ read_image(site.name + '_conse_2', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_conse_2',500) }}'" class="img-consejos" alt="item" />
                          <!--  <img class="img-consejos" src="" > -->
                       </div>
-      
+
                    <div class="col-md-6">
                        <div class="con-1 {{editabletext}}" text-id="{{ site.name + '_til_conse_2' }}"> {{ read_text(site.name +  '_til_conse_2') }} </div>
                        <div class="con-2 ellipsis multiline {{editabletext}}" text-id="{{ site.name + '_til_con_2' }}"> {{ read_text(site.name +  '_til_con_2') }}</div>
                     </div>
-        
+
                        <div class="col-md-12 col-sm-12 col-xs-12">
                           <hr class="one-blog">
                        </div>
@@ -160,12 +160,12 @@ $(document).ready(function()
                         <img id="{{ site.name }}_conse_3" src="{{ read_image(site.name + '_conse_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_conse_3',500) }}'" class="img-consejos" alt="item" />
                          <!--  <img class="img-consejos" src="" > -->
                       </div>
-      
+
                    <div class="col-md-6">
                        <div class="con-1 {{editabletext}}" text-id="{{ site.name + '_til_conse_3' }}"> {{ read_text(site.name +  '_til_conse_3') }} </div>
                        <div class="con-2 ellipsis multiline {{editabletext}}" text-id="{{ site.name + '_til_con_3' }}"> {{ read_text(site.name +  '_til_con_3') }}</div>
                     </div>
-                    
+
                      <div class="col-md-12 col-sm-12 col-xs-12">
                        <hr class="one-blog">
                      </div>
@@ -183,12 +183,12 @@ $(document).ready(function()
                         <img id="{{ site.name }}_conse_4" src="{{ read_image(site.name + '_conse_4', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_conse_4',500) }}'" class="img-consejos" alt="item" />
                          <!--  <img class="img-consejos" src="" > -->
                       </div>
-      
+
                    <div class="col-md-6">
                        <div class="con-1 {{editabletext}}" text-id="{{ site.name + '_til_conse_4' }}"> {{ read_text(site.name +  '_til_conse_4') }} </div>
                        <div class="con-2 ellipsis multiline {{editabletext}}" text-id="{{ site.name + '_til_con_4' }}"> {{ read_text(site.name +  '_til_con_4') }}</div>
                     </div>
-        
+
                    <div class="col-md-12 col-sm-12 col-xs-12">
                        <hr class="one-blog">
                     </div>
@@ -207,12 +207,12 @@ $(document).ready(function()
                         <img id="{{ site.name }}_conse_5" src="{{ read_image(site.name + '_conse_5', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_conse_5',500) }}'" class="img-consejos" alt="item" />
                          <!--  <img class="img-consejos" src="" > -->
                       </div>
-      
+
                    <div class="col-md-6">
                        <div class="con-1 {{editabletext}}" text-id="{{ site.name + '_til_conse_5' }}"> {{ read_text(site.name +  '_til_conse_5') }} </div>
                        <div class="con-2 ellipsis multiline {{editabletext}}" text-id="{{ site.name + '_til_con_5' }}"> {{ read_text(site.name +  '_til_con_5') }}</div>
                     </div>
-                 
+
                      <div class="col-md-12 col-sm-12 col-xs-12">
                        <hr class="one-blog">
                      </div>
@@ -230,7 +230,7 @@ $(document).ready(function()
                         <img id="{{ site.name }}_conse_6" src="{{ read_image(site.name + '_conse_6', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_conse_6',500) }}'" class="img-consejos" alt="item" />
                          <!--  <img class="img-consejos" src="" > -->
                       </div>
-      
+
                    <div class="col-md-6">
                        <div class="con-1 {{editabletext}}" text-id="{{ site.name + '_til_conse_6' }}"> {{ read_text(site.name +  '_til_conse_6') }} </div>
                        <div class="con-2 ellipsis multiline {{editabletext}}" text-id="{{ site.name + '_til_con_66' }}"> {{ read_text(site.name +  '_til_con_66') }}</div>
@@ -243,9 +243,9 @@ $(document).ready(function()
         </div>
    </div>
 
-       
-        
- 
+
+
+
 </section>
 
 

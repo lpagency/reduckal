@@ -9,7 +9,7 @@
 {% end %}
 {% block javascript %}
 <script type="text/javascript">
-$(document).ready(function() 
+$(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.planes').addClass("active");
@@ -27,7 +27,7 @@ $(document).ready(function()
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
     $(document).ecommerce({
         'app_public' : app_public,
@@ -45,7 +45,7 @@ $(document).ready(function()
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com');
-    // var app_public = $.environmentVar(4, 4, 4);
+    // var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     // var config = {
     //     'app_public': app_public,
     //     'base_url': base_url,
@@ -91,7 +91,7 @@ $(document).ready(function()
                 </div>
             </div>
         </div>
-    
+
 
 
       <div class="col-md-12">
@@ -167,7 +167,7 @@ $(document).ready(function()
                    <div class="fa-p-2 {{editabletext}}" text-id="{{ site.name + '_sin_5' }}"> {{ read_text(site.name +  '_sin_5') }} </div>
                   <div class="da-p-2 {{editabletext}}" text-id="{{ site.name + '_sin_5' }}"> {{ read_text(site.name +  '_sin_5') }} </div>
                </div>
-           
+
 
                <div class="col-md-12 col-sm-12 col-xs-12">
                     <hr class="lu-p-2">
@@ -216,7 +216,7 @@ $(document).ready(function()
                         </div>
                         {% end %}
                         <img id="{{ site.name }}_lul" src="{{ read_image(site.name + '_lul', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_lul',500) }}'" class="ico-fu-p-2" alt="item" />
-                  <!-- <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->  
+                  <!-- <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->
                    <div class="fa-p-2 {{editabletext}}" text-id="{{ site.name + '_sin_10' }}"> {{ read_text(site.name +  '_sin_10') }}</div>
                   <div class="da-p-2 {{editabletext}}" text-id="{{ site.name + '_sin_11' }}"> {{ read_text(site.name +  '_sin_11') }} </div>
                </div>
@@ -230,11 +230,11 @@ $(document).ready(function()
                         </div>
                         {% end %}
                         <img id="{{ site.name }}_lala" src="{{ read_image(site.name + '_lala', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_lala',500) }}'" class="ico-fu-p-2" alt="item" />
-                 <!--  <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->  
+                 <!--  <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->
                    <div class="fa-p-2 {{editabletext}}" text-id="{{ site.name + '_sin_12' }}"> {{ read_text(site.name +  '_sin_12') }}</div>
                   <div class="da-p-2 {{editabletext}}" text-id="{{ site.name + '_sin_13' }}"> {{ read_text(site.name +  '_sin_13') }}</div>
                </div>
-        
+
 
                <div class="col-md-12 col-sm-12 col-xs-12">
                        <hr class="lu-p-2">
@@ -254,7 +254,7 @@ $(document).ready(function()
                         <img id="{{ site.name }}_sumi" src="{{ read_image(site.name + '_sumi', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_sumi',500) }}'" class="ico-rep-p-2" alt="item" />
                   <!--  <img class="ico-rep-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png">  -->
                </div>
-                
+
                 <div class="col-md-6 col-sm-6">
                     <div class="text-rep-p-2 {{editabletext}}" text-id="{{ site.name + '_90_p_p' }}"> {{ read_text(site.name +  '_90_p_p') }} </div>
                </div>
@@ -282,7 +282,7 @@ $(document).ready(function()
         </div>
 
      </div>
-    
+
 </section>
 
 

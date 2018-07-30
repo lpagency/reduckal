@@ -9,14 +9,14 @@
 {% end %}
 {% block javascript %}
 <script type="text/javascript">
-$(document).ready(function() 
+$(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.planes').addClass("active");
 
     // $("#OpenAlert").click();
 
-    var app_public = $.environmentVar(4,4,4);
+    var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -28,7 +28,7 @@ $(document).ready(function()
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
     $(document).ecommerce({
         'app_public' : app_public,
@@ -46,7 +46,7 @@ $(document).ready(function()
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com');
-    // var app_public = $.environmentVar(4, 4, 4);
+    // var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     // var config = {
     //     'app_public': app_public,
     //     'base_url': base_url,
@@ -92,7 +92,7 @@ $(document).ready(function()
                 </div>
             </div>
         </div>
-    
+
 
 
       <div class="col-md-12">
@@ -167,7 +167,7 @@ $(document).ready(function()
                    <div class="fa-l-2 {{editabletext}}" text-id="{{ site.name + '_w_1' }}"> {{ read_text(site.name +  '_w_1') }} </div>
                   <div class="da-l-2 {{editabletext}}" text-id="{{ site.name + '_w_2' }}"> {{ read_text(site.name +  '_w_2') }} </div>
                </div>
-              
+
 
                <div class="col-md-12 col-sm-12 col-xs-12">
                  <hr class="lu-p">
@@ -216,7 +216,7 @@ $(document).ready(function()
                         </div>
                         {% end %}
                         <img id="{{ site.name }}_q_7" src="{{ read_image(site.name + '_q_7', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_q_7',500) }}'" class="ico-fu-l-2" alt="item" />
-                  <!-- <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->  
+                  <!-- <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->
                    <div class="fa-l-2 {{editabletext}}" text-id="{{ site.name + '_213' }}"> {{ read_text(site.name +  '_213') }}</div>
                   <div class="da-l-2 {{editabletext}}" text-id="{{ site.name + '_q_235' }}"> {{ read_text(site.name +  '_q_235') }} </div>
                </div>
@@ -230,11 +230,11 @@ $(document).ready(function()
                         </div>
                         {% end %}
                         <img id="{{ site.name }}_q_8" src="{{ read_image(site.name + '_q_8', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_q_8',500) }}'" class="ico-fu-l-2" alt="item" />
-                 <!--  <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->  
+                 <!--  <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->
                    <div class="fa-l-2 {{editabletext}}" text-id="{{ site.name + '_def3' }}"> {{ read_text(site.name +  '_def3') }}</div>
                   <div class="da-l-2 {{editabletext}}" text-id="{{ site.name + '_s_1' }}"> {{ read_text(site.name +  '_s_1') }}</div>
                </div>
-               
+
 
                <div class="col-md-12 col-sm-12 col-xs-12">
                 <hr class="lu-p">
@@ -254,7 +254,7 @@ $(document).ready(function()
                         <img id="{{ site.name }}_q_9" src="{{ read_image(site.name + '_q_9', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_q_9',500) }}'" class="ico-rep-l-2" alt="item" />
                   <!--  <img class="ico-rep-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png">  -->
                </div>
-                
+
                 <div class="col-md-6 col-sm-6">
                     <div class="text-rep-l-2 {{editabletext}}" text-id="{{ site.name + '_56' }}"> {{ read_text(site.name +  '_56') }} </div>
                </div>
@@ -262,7 +262,7 @@ $(document).ready(function()
                <div class="col-md-12 col-sm-12">
 
                     <!-- <button type="button" class="btn btn-warning l-2 comprar-btn pack-listo" quantity="50" plan="light">PACK LISTO</button> -->
-                
+
                 <div align="center">
                   <a href="{{ site_base }}/producto_planes">
                     <button type="button" class="btn btn-warning l-l-2 comprar-btn" quantity="100" plan="quick">Compra tu plan</button>
@@ -286,7 +286,7 @@ $(document).ready(function()
         </div>
 
      </div>
-    
+
 </section>
 
 

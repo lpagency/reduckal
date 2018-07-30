@@ -11,12 +11,12 @@
 <script type="text/javascript" src="{{ site_base }}/static/js/redukcal2.js"></script>
 <script type="text/javascript" src="{{ site_base }}/static/js/datepicker.conf.js"></script>
 <script type="text/javascript">
-$(document).ready(function() 
+$(document).ready(function()
 {
     $('.font-menu').removeClass('active');
     $('.inicio').addClass("active");
 
-    var app_public = $.environmentVar(4,4,4);
+    var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -28,8 +28,8 @@ $(document).ready(function()
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
-    
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
+
     $(document).ecommerce({
         'app_public' : app_public,
         'animation' : 'simple',
@@ -46,7 +46,7 @@ $(document).ready(function()
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com');
-    // var app_public = $.environmentVar(4, 4, 4);
+    // var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     // var config = {
     //     'app_public': app_public,
     //     'base_url': base_url,
@@ -92,11 +92,11 @@ $(document).ready(function()
 
 {% block body %}
 
-<section id="first-page-scroll"> 
+<section id="first-page-scroll">
      <div class="mobile-ho" style="background:url('{{ read_image(site.name + '_banner_success') }}');  height:512px; background-size:cover; filter: grayscale(0%) brightness(65%); margin-top: -20px;
     -webkit-filter: grayscale(0%) brightness(85%); -moz-filter: grayscale(0%) brightness(65%);
-    -ms-filter: grayscale(0%) brightness(65%); 
-    -o-filter: grayscale(0%) brightness(65%); 
+    -ms-filter: grayscale(0%) brightness(65%);
+    -o-filter: grayscale(0%) brightness(65%);
   " data-img-width="1600" data-img-height="1064" data-diff="100">
         {% if is_admin %}
           <div class="image-upload part1 lapiz visible-movil">
@@ -106,23 +106,23 @@ $(document).ready(function()
                    <input type="file" class="editableimage" image-id="{{ site.name }}_banner_success" name="image" id="img_banner_success" >
           </div>
         {% end %}
-                <img id="{{ site.name }}_banner_success" src="{{ read_image(site.name + '_banner_success', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_success',500) }}'" class="banner_metodo hidden" alt="item">      
+                <img id="{{ site.name }}_banner_success" src="{{ read_image(site.name + '_banner_success', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_success',500) }}'" class="banner_metodo hidden" alt="item">
        </div>
-<!--        
+<!--
        <div class="container">
         <div class="col-md-12">
            <div class="texto-cuadro {{editabletext}}" text-id="{{ site.name + '_til_met' }}"> {{ read_text(site.name +  '_til_met') }}</div>
        </div>
-     </div> --> 
+     </div> -->
 
-      
+
 </section>
     <div id="wrap">
         <!-- registration -->
         <div class="container">
             <div class="row pages-caption" >
                 <div class="container">
-                
+
                 <div class="tex-suc text-center {{editabletext}}" text-id="{{ site.name + '_til_met_su2' }}"> {{ read_text(site.name +  '_til_met_su2') }} </div>
 
                 <div class="tex-suc text-center {{editabletext}}" text-id="{{ site.name + '_til_met_su' }}"> {{ read_text(site.name +  '_til_met_su') }} </div>

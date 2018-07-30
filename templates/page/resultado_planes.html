@@ -10,7 +10,7 @@
 
 {% block javascript %}
 <script type="text/javascript">
-$(document).ready(function() 
+$(document).ready(function()
 {
 
       document.cookie = 'shopping-cart=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
@@ -20,7 +20,7 @@ $(document).ready(function()
 
     // $("#OpenAlert").click();
 
-    var app_public = $.environmentVar(4,4,4);
+    var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -32,7 +32,7 @@ $(document).ready(function()
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
     $(document).ecommerce({
         'app_public' : app_public,
@@ -54,7 +54,7 @@ $(document).ready(function()
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com');
-    // var app_public = $.environmentVar(4, 4, 4);
+    // var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     // var config = {
     //     'app_public': app_public,
     //     'base_url': base_url,
@@ -77,7 +77,7 @@ $(document).ready(function()
 });
 </script>
 
- 
+
  <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
@@ -97,8 +97,8 @@ $(document).ready(function()
 
 
 
-<section id="first-page-scroll"> 
-     <div class="mobile-ho" style="background:url('{{ read_image(site.name + '_banner_plan') }}'); 
+<section id="first-page-scroll">
+     <div class="mobile-ho" style="background:url('{{ read_image(site.name + '_banner_plan') }}');
     height: 400px;
     background-size: cover;
     filter: grayscale(0%) brightness(65%);
@@ -117,7 +117,7 @@ $(document).ready(function()
                    <input type="file" class="editableimage" image-id="{{ site.name }}_banner_plan" name="image" id="img_banner_plan" >
           </div>
         {% end %}
-                <img id="{{ site.name }}_banner_plan" src="{{ read_image(site.name + '_banner_plan', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_plan',500) }}'" class="banner_productos hidden" alt="item">     
+                <img id="{{ site.name }}_banner_plan" src="{{ read_image(site.name + '_banner_plan', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_plan',500) }}'" class="banner_productos hidden" alt="item">
        </div>
 
        <div class="container">
@@ -138,7 +138,7 @@ $(document).ready(function()
            <div class="texto-pl text-center {{editabletext}}" text-id="{{ site.name + '_tex_xx' }}"> {{ read_text(site.name +  '_tex_xx') }}</div>
            <hr class="plan">
         </div>
-    
+
     <!-- **cuadritos planes** -->
  <div align="center" class="plans-normal hidden">
         <div class="col-md-3 col-sm-6">
@@ -162,7 +162,7 @@ $(document).ready(function()
               <button type="button" class="btn btn-primary more">Más información</button>
             </a>
         </div>
-        
+
          <div class="col-md-3 col-sm-6">
            <div class="cuadro-pl">
              <div class="tex-nim {{editabletext}}" text-id="{{ site.name + '_tex_ii_i' }}"> {{ read_text(site.name +  '_tex_ii_i') }}</div>
@@ -253,7 +253,7 @@ $(document).ready(function()
                   <button type="button" class="btn btn-primary more">Más información</button>
                 </a>
             </div>
-            
+
              <div class="col-md-3 col-sm-6">
                <div class="cuadro-pl">
                  <div class="tex-nim {{editabletext}}" text-id="{{ site.name + '_tex_ii_plus_i' }}"> {{ read_text(site.name +  '_tex_ii_plus_i') }}</div>

@@ -10,7 +10,7 @@
 
 {% block javascript %}
 <script type="text/javascript">
-    $(document).ready(function() 
+    $(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.planes').addClass("active");
@@ -18,13 +18,13 @@
   });
 </script>
 <script type="text/javascript">
-$(document).ready(function() 
+$(document).ready(function()
 {
-   
+
 
     // $("#OpenAlert").click();
 
-    var app_public = $.environmentVar(4,4,4);
+    var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -36,7 +36,7 @@ $(document).ready(function()
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
     $(document).ecommerce({
         'app_public' : app_public,
@@ -54,7 +54,7 @@ $(document).ready(function()
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com');
-    // var app_public = $.environmentVar(4, 4, 4);
+    // var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     // var config = {
     //     'app_public': app_public,
     //     'base_url': base_url,
@@ -77,7 +77,7 @@ $(document).ready(function()
 });
 </script>
 
- 
+
  <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
@@ -103,8 +103,8 @@ $(document).ready(function()
            <div class="texto-light text-center {{editabletext}}" text-id="{{ site.name + '_plan_light' }}"> {{ read_text(site.name +  '_plan_light') }}</div>
            <hr class="plan">
         </div>
-    
- 
+
+
     <!-- **cuadritos planes** -->
 
  <div align="center">
@@ -121,12 +121,12 @@ $(document).ready(function()
 
          <button type="button" class="btn btn-warning plan-or result_plans">CONTINUAR</button>
 
-     </div>  
+     </div>
  </div>
 </div>
 
 <!-- <div class="col-md-12 text-center">
-     <button type="button" class="btn btn-info new">Volver a otros planes</button>  
+     <button type="button" class="btn btn-info new">Volver a otros planes</button>
 </div>  -->
 
 </section>
