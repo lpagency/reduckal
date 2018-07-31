@@ -10,7 +10,7 @@
 {% block javascript %}
 
 <script type="text/javascript">
-  $(document).ready(function() 
+  $(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.blog').addClass("active");
@@ -19,12 +19,12 @@
 </script>
 
 <script type="text/javascript">
-$(document).ready(function() 
+$(document).ready(function()
 {
 
     // $("#OpenAlert").click();
 
-    var app_public = $.environmentVar(4,4,4);
+    var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -36,7 +36,7 @@ $(document).ready(function()
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
     $(document).ecommerce({
         'app_public' : app_public,
@@ -58,7 +58,7 @@ $(document).ready(function()
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com');
-    // var app_public = $.environmentVar(4, 4, 4);
+    // var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     // var config = {
     //     'app_public': app_public,
     //     'base_url': base_url,
@@ -93,11 +93,11 @@ $(document).ready(function()
 {% end %}
 
 <!-- ********Contenido******* -->
-    <section id="first-page-scroll"  > 
+    <section id="first-page-scroll"  >
      <div class="mobile-ho" style="background:url('{{ read_image(site.name + '_banner_blog') }}'); height:450px; background-size:cover; filter: grayscale(0%) brightness(65%); margin-top: -20px;
     -webkit-filter: grayscale(0%) brightness(85%); -moz-filter: grayscale(0%) brightness(65%);
-    -ms-filter: grayscale(0%) brightness(65%); 
-    -o-filter: grayscale(0%) brightness(65%); 
+    -ms-filter: grayscale(0%) brightness(65%);
+    -o-filter: grayscale(0%) brightness(65%);
     background-position:center;" data-img-width="1600" data-img-height="1064" data-diff="100">
         {% if is_admin %}
           <div class="image-upload part1 lapiz visible-movil">
@@ -107,12 +107,12 @@ $(document).ready(function()
                    <input type="file" class="editableimage" image-id="{{ site.name }}_banner_blog" name="image" id="img_banner_blog" >
           </div>
         {% end %}
-                <img id="{{ site.name }}_banner_blog" src="{{ read_image(site.name + '_banner_blog', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_blog',500) }}'" class="banner_blog hidden" alt="item">  
+                <img id="{{ site.name }}_banner_blog" src="{{ read_image(site.name + '_banner_blog', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_blog',500) }}'" class="banner_blog hidden" alt="item">
        </div>
 
        <div class="container">
-        <div class="consejos-ban"> Noticias </div>  
-          <div class="col-md-4"> 
+        <div class="consejos-ban"> Noticias </div>
+          <div class="col-md-4">
              <div class="cuadro-text-bann">
                  <div class="texto-cuadro-blo {{editabletext}}" text-id="{{ site.name + '_til_blog' }}"> {{ read_text(site.name +  '_til_blog') }}</div>
               <div align="center">
@@ -120,7 +120,7 @@ $(document).ready(function()
                  <button type="button" class="btn btn-default-blog-ban">Leer más</button>
                  </a>
               </div>
-  
+
              </div>
           </div>
       </div>
@@ -132,9 +132,9 @@ $(document).ready(function()
             <div class="col-md-6 col-sm-6">
                <div class="box-blog">
                  <div class="note-blog"> PREGUNTAS FRECUENTES</div>
-                 <div class="text-blog {{editabletext}}" text-id="{{ site.name + '_tip_dd' }}"> {{ read_text(site.name +  '_tip_dd') }}</div> 
+                 <div class="text-blog {{editabletext}}" text-id="{{ site.name + '_tip_dd' }}"> {{ read_text(site.name +  '_tip_dd') }}</div>
                  <hr class="dos-2">
-                  <div class="inf-blog {{editabletext}}" text-id="{{ site.name + '_tip_blog_dos' }}"> {{ read_text(site.name +  '_tip_blog_dos') }}</div> 
+                  <div class="inf-blog {{editabletext}}" text-id="{{ site.name + '_tip_blog_dos' }}"> {{ read_text(site.name +  '_tip_blog_dos') }}</div>
                    <hr class="dos-2">
                    <a href="{{site_base}}/blog_preguntas_frecuentes">
                    <button type="button" class="btn btn-default-box">MÁS INFORMACIÓN</button>
@@ -146,12 +146,12 @@ $(document).ready(function()
                  <div class="text-form-blog text-center {{editabletext}}" text-id="{{ site.name + '_tip_for' }}"> {{ read_text(site.name +  '_tip_for') }}    </div>
                  <div class="text-f-b text-center {{editabletext}}" text-id="{{ site.name + '_tip_for_1' }}"> {{ read_text(site.name +  '_tip_for_1') }} </div>
                  <div class="text-f-b-2 text-center {{editabletext}}" text-id="{{ site.name + '_tip_for_dos' }}"> {{ read_text(site.name +  '_tip_for_dos') }}  </div>
-        
+
                   <!-- ***formulario** -->
 
                   <form action="{{ site_base }}/contact" class=""  method="post" novalidate id="newsletter2">
                         <div class="row clearfix">
-                   
+
                           <div class="form-group blog">
                               <label class="control-label"></label>
                               <div class=" controls">
@@ -167,8 +167,8 @@ $(document).ready(function()
                               </div>
                               <span id="helpBlock3" class="hidden help-block help-mail-2  bl">Escribe tu Email</span>
                             </div>
-                          
-                        </div>  
+
+                        </div>
                         <div class="form-group blog">
                           <label class="control-label"></label>
                           <div class="controls">
@@ -180,9 +180,9 @@ $(document).ready(function()
 
                         <p><button name="submit" id="Enviar" type="submit" class="btn btn-store btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Email Sent">ENVIAR </button></p>
                         <input type="hidden" name="submitted" id="submitted3" value="true">
-                      </form> 
+                      </form>
 
-               </div> 
+               </div>
 
                <div class="box-blog-2 hidden" id="message-success" style="top:-12px;">
                  <div class="inf-blog text-center {{editabletext}}" text-id="{{ site.name + '_tip_for_tres' }}"> {{ read_text(site.name +  '_tip_for_tres') }}    </div>
@@ -212,7 +212,7 @@ $(document).ready(function()
                       <div class="blog-1-1 {{editabletext}}" text-id="{{ site.name + '_til_blog_to_33' }}"> {{ read_text(site.name +  '_til_blog_to_33') }} </div>
                       <div class="blog-1-des ellipsis multiline {{editabletext}}" text-id="{{ site.name + '_til_blog_no' }}"> {{ read_text(site.name +  '_til_blog_no') }} </div>
                  </div>
-          
+
           <div style="position: relative;">
               {% if is_admin %}
                 <img class="change-image blog editablelink" link-id="{{ site.name + '_but_1' }}" content="{{ read_link(site.name + '_but_1') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
@@ -224,7 +224,7 @@ $(document).ready(function()
            <div class="col-md-12 col-sm-12">
            <hr class="one-blog-0">
            </div>
-            
+
   <!-- **dos*+ -->
             <div class="col-md-6">
                   {% if is_admin %}
@@ -255,7 +255,7 @@ $(document).ready(function()
            <div class="col-md-12 col-sm-12">
            <hr class="one-blog-0">
            </div>
-           
+
 <!-- **tres*+ -->
             <div class="col-md-6">
                   {% if is_admin %}
@@ -286,7 +286,7 @@ $(document).ready(function()
            <div class="col-md-12 col-sm-12">
            <hr class="one-blog-0">
            </div>
-           
+
 <!-- **cuatro** -->
             <div class="col-md-6">
                   {% if is_admin %}
@@ -320,7 +320,7 @@ $(document).ready(function()
 
           </div>
       </div>
-     
+
   </div>
 
 

@@ -18,7 +18,7 @@
 <script type="text/javascript">
     $(document).ready(function()
     {
-        var app_public = $.environmentVar(4,4,4);
+        var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
         var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -30,7 +30,7 @@
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
         $(document).ecommerce('product_detail', {
             'app_public' : app_public,
@@ -55,7 +55,7 @@
                     'onLoad':function(){
                          $('.ellipsis').ellipsis();
                      }
-                
+
             };
             $('.product-related').ecommerce('product_box', config);
         };
@@ -64,78 +64,78 @@
 </script>
 
 <script type="text/template" id="product_detail">
- 
-         
+
+
          <div class="col-md-3">
           <div id="menu">
-        
+
         <ul>
 
     <!-- **uno** -->
     <li class="has-sub active"><a title="" href="">PLANES LISTOS</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-  
+
     </li>
-    
+
     <!-- **dos** -->
 
     <li class="has-sub active"><a title="" href="">PRODUCTOS</a>
     <i class="fa fa-angle-double-right" aria-hidden="true"></i>
 
     </li>
-      
+
     <!-- **tres** -->
       <li class="has-sub"><a title="" href="">CREMAS</a>
       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-    
+
     </li>
-      
+
    <!-- **cuatro** -->
       <li class="has-sub"><a title="" href="">TORTILLAS/OMELET</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
- 
+
     </li>
-     
+
    <!-- **cinco** -->
       <li class="has-sub"><a title="" href="">DELICIAS</a>
       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-   
+
     </li>
-      
+
    <!-- **seis** -->
 
       <li class="has-sub"><a title="" href="">SHAKES</a>
       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-    
+
     </li>
-      
+
 <!-- **siete** -->
 
       <li class="has-sub"><a title="" href="">REFRESCOS</a>
       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
 
     </li>
-      
+
 <!-- **ocho** -->
 
       <li class="has-sub"><a title="" href="">SHOT</a>
       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
 
     </li>
-    
+
 <!-- **nueve** -->
 
      <li class="has-sub"><a title="" href="">BEBIDAS CALIENTES</a> <i class="fa fa-angle-double-right" aria-hidden="true"></i>
- 
+
     </li>
 
 
 </ul>
- 
+
 </div>
 
 </div>
           <div class="container">
                <div class="col-md-8">
-                 <div class="box-det"> 
+                 <div class="box-det">
                        <div class="col-md-4 col-sm-4 col-xs-12">
                        <img src="{{! images[0]['thumb_200'] }}" title="" alt="" class="img_prod_detail">
                        </div>
@@ -143,24 +143,24 @@
                          <div align="center">
                                     <h1 class="name name_prod_detail"><a class="line" href="#">{{! name }}</a></h1>
                                     <hr class="detal">
-                                    <h3 class="descr_prod_detail ellipsis multiline"> 
+                                    <h3 class="descr_prod_detail ellipsis multiline">
                                     <a class="line" href="{{ site_base }}/sc/plans/detail/{{! name|friendly }}/{{! id }}">{{! description }}</a></h3>
                                     <button type="button" class="btn btn-success">AÑADIR AL CARRITO</button>
-                         
+
                             </div>
                        </div>
                  </div>
                </div>
           </div>
 
-                 
-            
-    
+
+
+
 
 </script>
 
 
-<!-- 
+<!--
 {% end %} -->
 
 

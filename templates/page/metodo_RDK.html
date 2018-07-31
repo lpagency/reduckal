@@ -11,7 +11,7 @@
 <script type="text/javascript" src="{{ site_base }}/static/js/dermatologia.js"></script>
 
 <script type="text/javascript">
-    $(document).ready(function() 
+    $(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.metodos').addClass("active");
@@ -20,7 +20,7 @@
 </script>
 
 <script type="text/javascript">
-    $(document).ready(function() 
+    $(document).ready(function()
 {
    $('.carousel').carousel({
   interval: 1000 * 10
@@ -34,7 +34,7 @@
 
     // $("#OpenAlert").click();
 
-    var app_public = $.environmentVar(4,4,4);
+    var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -46,7 +46,7 @@
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
     $(document).ecommerce({
         'app_public' : app_public,
@@ -68,7 +68,7 @@
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com');
-    // var app_public = $.environmentVar(4, 4, 4);
+    // var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     // var config = {
     //     'app_public': app_public,
     //     'base_url': base_url,
@@ -109,7 +109,7 @@
                 var asunto = $("#itComentario").val();
 
                 var error_count = 0;
- 
+
                 // --- Condicionales anidados ----
                 //Si nombre está vacío
                 //Muestra el mensaje
@@ -155,7 +155,7 @@
                 {
                     return false;
                 }
- 
+
             });//click
         });//ready
 </script>
@@ -171,11 +171,11 @@
 
 
 <!-- ********Contenido******* -->
-  <section id="first-page-scroll"> 
+  <section id="first-page-scroll">
      <div class="mobile-ho" style="background:url('{{ read_image(site.name + '_banner_metodo') }}'); height:450px; background-size:cover; filter: grayscale(0%) brightness(65%); margin-top: -20px;
     -webkit-filter: grayscale(0%) brightness(85%); -moz-filter: grayscale(0%) brightness(65%);
-    -ms-filter: grayscale(0%) brightness(65%); 
-    -o-filter: grayscale(0%) brightness(65%); 
+    -ms-filter: grayscale(0%) brightness(65%);
+    -o-filter: grayscale(0%) brightness(65%);
   " data-img-width="1600" data-img-height="1064" data-diff="100">
         {% if is_admin %}
           <div class="image-upload part1 lapiz visible-movil">
@@ -185,7 +185,7 @@
                    <input type="file" class="editableimage" image-id="{{ site.name }}_banner_metodo" name="image" id="img_banner_metodo" >
           </div>
         {% end %}
-                <img id="{{ site.name }}_banner_metodo" src="{{ read_image(site.name + '_banner_metodo', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_metodo',500) }}'" class="banner_metodo hidden" alt="item">      
+                <img id="{{ site.name }}_banner_metodo" src="{{ read_image(site.name + '_banner_metodo', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_metodo',500) }}'" class="banner_metodo hidden" alt="item">
        </div>
        <div class="container">
         <div class="col-md-6">
@@ -195,9 +195,9 @@
            <div class="texto-bajo {{editabletext}}" text-id="{{ site.name + '_til_met_dos' }}"> {{ read_text(site.name +  '_til_met_dos') }}</div>
          </div>
        </div>
-     </div> 
+     </div>
 
-      
+
 </section>
 
 <section class="metodo">
@@ -216,64 +216,64 @@
             <img id="{{ site.name }}_icono_box" src="{{ read_image(site.name + '_icono_box', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_icono_box',500) }}'" class="icono-box" alt="item" />
 
               <!--   <img class="icono-box" src="https://84static.loadingplay.com/static/images/f530d15ee219ec5d6a9385217839d0d6_gearsYellow.png"> -->
-                 <div class="text-box-met {{editabletext}}" text-id="{{ site.name + '_tip_met' }}"> {{ read_text(site.name +  '_tip_met') }}</div> 
+                 <div class="text-box-met {{editabletext}}" text-id="{{ site.name + '_tip_met' }}"> {{ read_text(site.name +  '_tip_met') }}</div>
                  <hr class="dos">
-                  <div class="inf-met {{editabletext}}" text-id="{{ site.name + '_tip_met_2' }}"> {{ read_text(site.name +  '_tip_met_2') }}</div> 
+                  <div class="inf-met {{editabletext}}" text-id="{{ site.name + '_tip_met_2' }}"> {{ read_text(site.name +  '_tip_met_2') }}</div>
                </div>
             </div>
          <div class="col-md-6 col-sm-6">
                <div class="box-metodo bo-on">
-                 <div class="text-box-met-2 {{editabletext}}" text-id="{{ site.name + '_tip_met_3' }}"> {{ read_text(site.name +  '_tip_met_3') }}</div> 
+                 <div class="text-box-met-2 {{editabletext}}" text-id="{{ site.name + '_tip_met_3' }}"> {{ read_text(site.name +  '_tip_met_3') }}</div>
                  <hr>
 
-                <div class="circles-1">  </div> 
+                <div class="circles-1">  </div>
                   <div class="text-cir-1 {{editabletext}}" text-id="{{ site.name + '_lis_1' }}"> {{ read_text(site.name +  '_lis_1') }}</div>
 
 
-                 <div class="circles-2"> </div> 
+                 <div class="circles-2"> </div>
                      <div class="text-cir-2 {{editabletext}}" text-id="{{ site.name + '_lis_2' }}"> {{ read_text(site.name +  '_lis_2') }}</div>
-                 
 
-                 <div class="circles-3"> </div> 
+
+                 <div class="circles-3"> </div>
                  <div class="text-cir-3 {{editabletext}}" text-id="{{ site.name + '_lis_3' }}"> {{ read_text(site.name +  '_lis_3') }}</div>
 
 
-                 <div class="circles-4"> </div> 
+                 <div class="circles-4"> </div>
                  <div class="text-cir-4 {{editabletext}}" text-id="{{ site.name + '_lis_4' }}"> {{ read_text(site.name +  '_lis_4') }}</div>
-                 
+
 
                  <div class="circles-5"> </div>
-                 <div class="text-cir-5 {{editabletext}}" text-id="{{ site.name + '_lis_5' }}"> {{ read_text(site.name +  '_lis_5') }}</div> 
-                 
-                 <div class="circles-6"> </div> 
+                 <div class="text-cir-5 {{editabletext}}" text-id="{{ site.name + '_lis_5' }}"> {{ read_text(site.name +  '_lis_5') }}</div>
+
+                 <div class="circles-6"> </div>
                  <div class="text-cir-6 {{editabletext}}" text-id="{{ site.name + '_lis_6' }}"> {{ read_text(site.name +  '_lis_6') }}</div>
-                 
+
 
                  <div class="circles-7"> </div>
-                 <div class="text-cir-7 {{editabletext}}" text-id="{{ site.name + '_lis_7' }}"> {{ read_text(site.name +  '_lis_7') }}</div> 
-                 
+                 <div class="text-cir-7 {{editabletext}}" text-id="{{ site.name + '_lis_7' }}"> {{ read_text(site.name +  '_lis_7') }}</div>
 
-                 <div class="circles-8"> </div> 
+
+                 <div class="circles-8"> </div>
                  <div class="text-cir-8 {{editabletext}}" text-id="{{ site.name + '_lis_8' }}"> {{ read_text(site.name +  '_lis_8') }}</div>
-                 
 
-                 <div class="circles-9">  </div> 
+
+                 <div class="circles-9">  </div>
                  <div class="text-cir-9 {{editabletext}}" text-id="{{ site.name + '_lis_9' }}"> {{ read_text(site.name +  '_lis_9') }}</div>
-                 
 
-                 <div class="circles-10"> </div> 
+
+                 <div class="circles-10"> </div>
                 <div class="text-cir-10 {{editabletext}}" text-id="{{ site.name + '_lis_10' }}"> {{ read_text(site.name +  '_lis_10') }}</div>
 
-               </div> 
+               </div>
             </div>
    </div>
-     
+
    <div align="center">
       <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="cuadro-grande">
             <div  class="titulo-metodo text-center {{editabletext}}" text-id="{{ site.name + '_lis_11' }}"> {{ read_text(site.name +  '_lis_11') }} </div>
             <hr class="met">
-            
+
             <div class="col-md-2 col-sm-2 col-xs-6">
                      {% if is_admin %}
               <div class="image-upload lapiz visible-movil">
@@ -289,8 +289,8 @@
                       <hr class="iconos-hr">
                       <div class="letter {{editabletext}}" text-id="{{ site.name + '_lis_12' }}"> {{ read_text(site.name +  '_lis_12') }}</div>
                       <div class="com {{editabletext}}" text-id="{{ site.name + '_lis_12_2' }}"> {{ read_text(site.name +  '_lis_12_2') }}</div>
-                </div> 
-          
+                </div>
+
           <div class="col-md-2 col-sm-2 col-xs-6">
                             {% if is_admin %}
             <div class="image-upload lapiz visible-movil">
@@ -305,8 +305,8 @@
                     <hr class="iconos-hr">
                      <div class="letter {{editabletext}}" text-id="{{ site.name + '_lis_13' }}"> {{ read_text(site.name +  '_lis_13') }}</div>
                       <div class="com {{editabletext}}" text-id="{{ site.name + '_lis_13_2' }}"> {{ read_text(site.name +  '_lis_13_2') }}</div>
-            </div> 
-            
+            </div>
+
 
             <div class="col-md-2 col-sm-2 col-xs-6">
                             {% if is_admin %}
@@ -322,8 +322,8 @@
                     <hr class="iconos-hr">
                      <div class="letter {{editabletext}}" text-id="{{ site.name + '_lis_14' }}"> {{ read_text(site.name +  '_lis_14') }}</div>
                       <div class="com {{editabletext}}" text-id="{{ site.name + '_lis_14_2' }}"> {{ read_text(site.name +  '_lis_14_2') }}</div>
-            </div> 
-            
+            </div>
+
 
             <div class="col-md-2 col-sm-2 col-xs-6">
                             {% if is_admin %}
@@ -339,8 +339,8 @@
                     <hr class="iconos-hr">
                     <div class="letter {{editabletext}}" text-id="{{ site.name + '_lis_15' }}"> {{ read_text(site.name +  '_lis_15') }} </div>
                      <div class="com {{editabletext}}" text-id="{{ site.name + '_lis_15_2' }}"> {{ read_text(site.name +  '_lis_15_2') }}</div>
-            </div> 
-            
+            </div>
+
 
             <div class="col-md-2 col-sm-2 col-xs-6">
                             {% if is_admin %}
@@ -356,8 +356,8 @@
                     <hr class="iconos-hr">
                      <div class="letter {{editabletext}}" text-id="{{ site.name + '_lis_16' }}"> {{ read_text(site.name +  '_lis_16') }} </div>
                       <div class="com {{editabletext}}" text-id="{{ site.name + '_lis_16_2' }}"> {{ read_text(site.name +  '_lis_16_2') }}</div>
-              </div> 
-        
+              </div>
+
         </div>
    </div>
 
@@ -370,7 +370,7 @@
           <div id="grande" class="cuadro-grande">
             <div class="titulo-metodo-2 text-center {{editabletext}}" text-id="{{ site.name + '_lis_titulo_or' }}"> {{ read_text(site.name +  '_lis_titulo_or') }} </div>
             <hr class="met">
-            
+
             <div class="col-md-3 col-sm-3 col-xs-6">
                      {% if is_admin %}
               <div class="image-upload lapiz visible-movil">
@@ -387,8 +387,8 @@
                       <div class="letter-or {{editabletext}}" text-id="{{ site.name + '_lis_or' }}"> {{ read_text(site.name +  '_lis_or') }}</div>
                       <div class="com-or {{editabletext}}" text-id="{{ site.name + '_lis_li' }}"> {{ read_text(site.name +  '_lis_li') }}</div>
                       <div class="wi {{editabletext}}" text-id="{{ site.name + '_lis_we' }}"> {{ read_text(site.name +  '_lis_we') }}</div>
-                </div> 
-          
+                </div>
+
           <div class="col-md-3 col-sm-3 col-xs-6">
                             {% if is_admin %}
             <div class="image-upload lapiz visible-movil">
@@ -404,8 +404,8 @@
                      <div class="letter-or {{editabletext}}" text-id="{{ site.name + '_lis_or_1' }}"> {{ read_text(site.name +  '_lis_or_1') }}</div>
                       <div class="com-or {{editabletext}}" text-id="{{ site.name + '_lis_lii' }}"> {{ read_text(site.name +  '_lis_lii') }}</div>
                        <div class="wi {{editabletext}}" text-id="{{ site.name + '_lis_woo' }}"> {{ read_text(site.name +  '_lis_woo') }}</div>
-            </div> 
-            
+            </div>
+
 
             <div class="col-md-3 col-sm-3 col-xs-6">
                             {% if is_admin %}
@@ -422,8 +422,8 @@
                      <div class="letter-or {{editabletext}}" text-id="{{ site.name + '_lis_or_2' }}"> {{ read_text(site.name +  '_lis_or_2') }}</div>
                       <div class="com-or {{editabletext}}" text-id="{{ site.name + '_lis_la' }}"> {{ read_text(site.name +  '_lis_la') }}</div>
                        <div class="wi {{editabletext}}" text-id="{{ site.name + '_lis_wii' }}"> {{ read_text(site.name +  '_lis_wii') }}</div>
-            </div> 
-            
+            </div>
+
 
             <div class="col-md-3 col-sm-3 col-xs-6">
                             {% if is_admin %}
@@ -440,8 +440,8 @@
                     <div class="letter-or {{editabletext}}" text-id="{{ site.name + '_lis_or_3' }}"> {{ read_text(site.name +  '_lis_or_3') }} </div>
                      <div class="com-or {{editabletext}}" text-id="{{ site.name + '_lis_lu' }}"> {{ read_text(site.name +  '_lis_lu') }}</div>
                       <div class="wi {{editabletext}}" text-id="{{ site.name + '_lis_wee' }}"> {{ read_text(site.name +  '_lis_wee') }}</div>
-            </div> 
-        
+            </div>
+
         </div>
    </div>
 
@@ -482,8 +482,8 @@
                   <hr class="met-slider">
 
                   <div class="text-sli-2 {{editabletext}}" text-id="{{ site.name + '_in_sli_2' }}"> {{ read_text(site.name +  '_in_sli_2') }} </div>
-              </div>    
-             </div>  
+              </div>
+             </div>
 
       </div>
 
@@ -504,14 +504,14 @@
 
                   <div class="text-sli-2 {{editabletext}}" text-id="{{ site.name + '_in_sli_22' }}"> {{ read_text(site.name +  '_in_sli_22') }} </div>
                 </div>
-             </div> 
+             </div>
 
 
       </div>
 
-    
+
       <div class="item mov-ban" style="background:url('{{ read_image(site.name + '_img_slider_3',500) }}'); height:460px; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
-      
+
          {% if is_admin %}
             <div class="image-upload lapiz visible-movil">
                <label for="img_slider_3">
@@ -528,9 +528,9 @@
                   <hr class="met-slider">
 
                   <div class="text-sli-2 {{editabletext}}" text-id="{{ site.name + '_ini_sli_2' }}"> {{ read_text(site.name +  '_ini_sli_2') }} </div>
-                </div>  
-             </div> 
-   
+                </div>
+             </div>
+
       </div>
 
       <div  class="item mov-ban" style="background:url('{{ read_image(site.name + '_img_slider_4',500) }}'); height:460px; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
@@ -549,8 +549,8 @@
                   <hr class="met-slider">
 
                   <div class="text-sli-2 {{editabletext}}" text-id="{{ site.name + '_in_3_sli_2' }}"> {{ read_text(site.name +  '_in_3_sli_2') }} </div>
-              </div>    
-             </div> 
+              </div>
+             </div>
 
         </div>
          <div  class="item mov-ban" style="background:url('{{ read_image(site.name + '_img_slider_5',500) }}'); height:460px; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
@@ -569,8 +569,8 @@
                   <hr class="met-slider">
 
                   <div class="text-sli-2 {{editabletext}}" text-id="{{ site.name + '_in_sli_re' }}"> {{ read_text(site.name +  '_in_sli_re') }} </div>
-              </div>    
-             </div> 
+              </div>
+             </div>
 
         </div>
     </div>

@@ -9,14 +9,14 @@
 {% end %}
 {% block javascript %}
 <script type="text/javascript">
-$(document).ready(function() 
+$(document).ready(function()
 {
        $('.font-menu').removeClass('active');
       $('.planes').addClass("active");
 
     // $("#OpenAlert").click();
 
-    var app_public = $.environmentVar(4,4,4);
+    var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -28,7 +28,7 @@ $(document).ready(function()
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
     $(document).ecommerce({
         'app_public' : app_public,
@@ -46,7 +46,7 @@ $(document).ready(function()
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com');
-    // var app_public = $.environmentVar(4, 4, 4);
+    // var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     // var config = {
     //     'app_public': app_public,
     //     'base_url': base_url,
@@ -92,7 +92,7 @@ $(document).ready(function()
                 </div>
             </div>
         </div>
-    
+
 
 
       <div class="col-md-12">
@@ -168,7 +168,7 @@ $(document).ready(function()
                    <div class="fa-l-2 {{editabletext}}" text-id="{{ site.name + '_re_18' }}"> {{ read_text(site.name +  '_re_18') }} </div>
                   <div class="da-l-2 {{editabletext}}" text-id="{{ site.name + '_re_19' }}"> {{ read_text(site.name +  '_re_19') }} </div>
                </div>
-             
+
 
                <div class="col-md-12 col-sm-12 col-xs-12">
                   <hr class="lu-p">
@@ -217,7 +217,7 @@ $(document).ready(function()
                         </div>
                         {% end %}
                         <img id="{{ site.name }}_re_28" src="{{ read_image(site.name + '_re_28', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_re_28',500) }}'" class="ico-fu-l-2" alt="item" />
-                  <!-- <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->  
+                  <!-- <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->
                    <div class="fa-l-2 {{editabletext}}" text-id="{{ site.name + '_re_29' }}"> {{ read_text(site.name +  '_re_29') }}</div>
                   <div class="da-l-2 {{editabletext}}" text-id="{{ site.name + '_re_30' }}"> {{ read_text(site.name +  '_re_30') }} </div>
                </div>
@@ -231,11 +231,11 @@ $(document).ready(function()
                         </div>
                         {% end %}
                         <img id="{{ site.name }}_re_31" src="{{ read_image(site.name + '_re_31', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_re_31',500) }}'" class="ico-fu-l-2" alt="item" />
-                 <!--  <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->  
+                 <!--  <img class="ico-for-2-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png"> -->
                    <div class="fa-l-2 {{editabletext}}" text-id="{{ site.name + '_re_32' }}"> {{ read_text(site.name +  '_re_32') }}</div>
                   <div class="da-l-2 {{editabletext}}" text-id="{{ site.name + '_re_33' }}"> {{ read_text(site.name +  '_re_33') }}</div>
                </div>
-             
+
 
                <div class="col-md-12 col-sm-12 col-xs-12">
                   <hr class="lu-p">
@@ -255,7 +255,7 @@ $(document).ready(function()
                         <img id="{{ site.name }}_re_35" src="{{ read_image(site.name + '_re_35', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_re_35',500) }}'" class="ico-rep-l-2" alt="item" />
                   <!--  <img class="ico-rep-q" src="https://84static.loadingplay.com/static/images/93af428fade277c22d77b0100992d6e7_descarga.png">  -->
                </div>
-                
+
                 <div class="col-md-6 col-sm-6">
                     <div class="text-rep-l-2 {{editabletext}}" text-id="{{ site.name + '_re_36' }}"> {{ read_text(site.name +  '_re_36') }} </div>
                </div>
@@ -282,7 +282,7 @@ $(document).ready(function()
         </div>
 
      </div>
-    
+
 </section>
 
 

@@ -11,14 +11,14 @@
 <script type="text/javascript" src="{{ site_base }}/static/js/redukcal2.js"></script>
 <script type="text/javascript" src="{{ site_base }}/static/js/datepicker.conf.js"></script>
 <script type="text/javascript">
-$(document).ready(function() 
+$(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.inicio').addClass("active");
 
     // $("#OpenAlert").click();
 
-    var app_public = $.environmentVar(4,4,4);
+    var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -30,7 +30,7 @@ $(document).ready(function()
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
     $(document).ecommerce({
         'app_public' : app_public,
@@ -48,7 +48,7 @@ $(document).ready(function()
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com',
     //     'https://pay.loadingplay.com');
-    // var app_public = $.environmentVar(4, 4, 4);
+    // var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
     // var config = {
     //     'app_public': app_public,
     //     'base_url': base_url,
@@ -72,7 +72,7 @@ $(document).ready(function()
 </script>
 
 <script type="text/javascript">
-    $(document).ready(function() 
+    $(document).ready(function()
 {
    $('.carousel').carousel({
   interval: 1000 * 8
@@ -94,11 +94,11 @@ $(document).ready(function()
 
 <!-- *contenido* -->
 
-<section> 
+<section>
      <div class="mobile-ho" style="background:url('{{ read_image(site.name + '_banner_home') }}');  height:450px; background-size:cover; filter: grayscale(0%) brightness(65%); margin-top: -20px;
     -webkit-filter: grayscale(0%) brightness(85%); -moz-filter: grayscale(0%) brightness(65%);
-    -ms-filter: grayscale(0%) brightness(65%); 
-    -o-filter: grayscale(0%) brightness(65%); 
+    -ms-filter: grayscale(0%) brightness(65%);
+    -o-filter: grayscale(0%) brightness(65%);
     margin-bottom: -120px; " data-img-width="1600" data-img-height="1064" data-diff="100">
         {% if is_admin %}
           <div class="image-upload part1 lapiz visible-movil">
@@ -108,7 +108,7 @@ $(document).ready(function()
                    <input type="file" class="editableimage" image-id="{{ site.name }}_banner_home" name="image" id="img_banner_home" >
           </div>
         {% end %}
-                <img id="{{ site.name }}_banner_home" src="{{ read_image(site.name + '_banner_home', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_home',500) }}'" class="banner_home hidden" alt="item">     
+                <img id="{{ site.name }}_banner_home" src="{{ read_image(site.name + '_banner_home', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_home',500) }}'" class="banner_home hidden" alt="item">
        </div>
 
        <div class="container">
@@ -127,9 +127,9 @@ $(document).ready(function()
     <div class="col-md-6 col-sm-6">
        <div class="box-whi">
          <div class="note-1"> METODO RDK</div>
-         <div class="inf-1 {{editabletext}}" text-id="{{ site.name + '_tip_4' }}"> {{ read_text(site.name +  '_tip_4') }}</div> 
+         <div class="inf-1 {{editabletext}}" text-id="{{ site.name + '_tip_4' }}"> {{ read_text(site.name +  '_tip_4') }}</div>
          <hr class="dos">
-          <div class="inf-2 {{editabletext}}" text-id="{{ site.name + '_tip_5' }}"> {{ read_text(site.name +  '_tip_5') }}</div> 
+          <div class="inf-2 {{editabletext}}" text-id="{{ site.name + '_tip_5' }}"> {{ read_text(site.name +  '_tip_5') }}</div>
           <a href="{{site_base}}/metodo_RDK">
           <button type="button" class="btn btn-default hom">Leer más</button>
           </a>
@@ -152,14 +152,14 @@ $(document).ready(function()
     <div class="col-md-6 col-sm-6">
        <div class="box-whi">
          <div class="note-2"> PLANES</div>
-         <div class="inf-3 {{editabletext}}" text-id="{{ site.name + '_tip_6' }}"> {{ read_text(site.name +  '_tip_6') }}</div> 
+         <div class="inf-3 {{editabletext}}" text-id="{{ site.name + '_tip_6' }}"> {{ read_text(site.name +  '_tip_6') }}</div>
          <hr class="tres">
-          <div class="inf-4 {{editabletext}}" text-id="{{ site.name + '_tip_7' }}"> {{ read_text(site.name +  '_tip_7') }}</div> 
+          <div class="inf-4 {{editabletext}}" text-id="{{ site.name + '_tip_7' }}"> {{ read_text(site.name +  '_tip_7') }}</div>
           <hr class="tres">
           <a href="{{site_base}}/planes">
           <button type="button" class="btn btn-danger">AQUÍ</button>
           </a>
-          <div class="inf-5 {{editabletext}}" text-id="{{ site.name + '_tip_8' }}"> {{ read_text(site.name +  '_tip_8') }}</div> 
+          <div class="inf-5 {{editabletext}}" text-id="{{ site.name + '_tip_8' }}"> {{ read_text(site.name +  '_tip_8') }}</div>
        </div>
        </div>
     </div>
@@ -273,7 +273,7 @@ $(document).ready(function()
             </div>
             {% end %}
             <img id="{{ site.name }}_slider_tree" src="{{ read_image(site.name + '_slider_tree', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_slider_tree',500) }}'" class="image-slider" alt="item" />
-          
+
             </div>
             <div class="col-md-6">
               <div class="intro-1 {{editabletext}}" text-id="{{ site.name + '_sli_7' }}"> {{ read_text(site.name +  '_sli_7') }}</div>
@@ -297,21 +297,21 @@ $(document).ready(function()
   <!-- End slider -->
 
 <!-- *************Formulario******** -->
-<!-- 
+<!--
   <section class="formulario-gris">
      <div class="col-md-12">
        <div class="press text-center {{editabletext}}" text-id="{{ site.name + '_for_1' }}"> {{ read_text(site.name +  '_for_1') }}</div>
      </div>
 
 
-   
+
     <form class="form-inline" role="form">
         <div class="form-group for-mov">
           <label for="name" class="dif-col">NOMBRE</label>
           <input type="name" class="form-control other" id="name" placeholder="Escribe tu nombre">
         </div>
     </form>
-   
+
     <form class="form-inline" role="form">
         <div class="form-group for-mov">
           <label for="email" class="dif-col">EMAIL</label>
@@ -321,7 +321,7 @@ $(document).ready(function()
           <label for="number" class="dif-col">TELEFONO</label>
           <input type="number" class="form-control other" id="number" placeholder="Escribe tu telefono">
         </div>
-         <button type="enviar" class="btn btn-primary">Enviar</button> 
+         <button type="enviar" class="btn btn-primary">Enviar</button>
     </form>
 
     <form class="form-inline" role="form">
@@ -333,7 +333,7 @@ $(document).ready(function()
 
 
   </section> -->
- 
+
 
 
 

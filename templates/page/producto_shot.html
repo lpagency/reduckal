@@ -1,6 +1,6 @@
 {% extends "../base.html" %}
 
-{% block title %} {{ site.name }} {% end %} 
+{% block title %} {{ site.name }} {% end %}
 
 {% block header %}
 {% include '../home/header.html' %}
@@ -8,7 +8,7 @@
 
 {% block javascript %}
 <script type="text/javascript">
-    $(document).ready(function() 
+    $(document).ready(function()
 {
       $('.font-menu').removeClass('active');
       $('.productos').addClass("active");
@@ -21,7 +21,7 @@
 
      $("#OpenAlert").click();
 
-      var app_public = $.environmentVar(4,4,4);
+      var app_public = $.environmentVar('redukcal', 'redukcal', 'redukcal');
       var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -33,7 +33,7 @@
         'https://pay.loadingplay.com/',
         'https://pay.loadingplay.com/'
     );
-    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal'); 
+    var site_name = $.environmentVar('redukcal', 'redukcal', 'redukcal');
 
        var config = {
            'base_url' : base_url,
@@ -61,7 +61,7 @@
        //     'products_per_page' : 9
        // });
 
-       
+
 
        // destacado categoria 2
        // config.tag = 'destacado_categoria2';
@@ -87,8 +87,8 @@ $("#menu-toggle").click(function(e) {
 <!--     <section>
    <div class="mobile-ho " style="background:url('{{ read_image(site.name + '_banner_shot') }}'); height:400px; background-size:cover; filter: grayscale(0%) brightness(65%); margin-top: -20px;
     -webkit-filter: grayscale(0%) brightness(85%); -moz-filter: grayscale(0%) brightness(65%);
-    -ms-filter: grayscale(0%) brightness(65%); 
-    -o-filter: grayscale(0%) brightness(65%); 
+    -ms-filter: grayscale(0%) brightness(65%);
+    -o-filter: grayscale(0%) brightness(65%);
     background-position:center; margin-bottom:54px; " data-img-width="1600" data-img-height="1064" data-diff="100">
             {% if is_admin %}
             <div class="image-upload part1 lapiz visible-movil">
@@ -108,13 +108,13 @@ $("#menu-toggle").click(function(e) {
         </div>
     </section>
     <!-- ****** menu izquierdo ******* -->
-    {% include 'menu_izquierdo.html' %} 
+    {% include 'menu_izquierdo.html' %}
     <!-- ****** menu izquierdo ******* -->
     <div class="container col-sm-12 col-md-9">
         <div class="product-list products"></div>
     </div>
     <div class="clearfix" ></div>
 </section> -->
-{% include '../home/footer.html' %} 
+{% include '../home/footer.html' %}
 
 {% end %}

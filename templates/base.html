@@ -57,17 +57,17 @@
     <link rel="stylesheet" href="{{ site_base }}/common/css/ellipsis.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/s/dt/dt-1.10.10/datatables.min.css"/> -->
-    {% block css %}{% end %} 
+    {% block css %}{% end %}
 
 </head>
 <body>
 
-    {% include 'product/product_box.html' %} 
-    {% include 'product/product_home.html' %} 
+    {% include 'product/product_box.html' %}
+    {% include 'product/product_home.html' %}
         {% if is_admin %}
         {% set editabletext = 'editabletext' %}
         {% else %}
-        {% set editabletext = '' %} 
+        {% set editabletext = '' %}
     {% end %}
 
     {% block header %}{% end %} {% block body %}{% end %}
@@ -180,12 +180,12 @@
         <span> {{! upp_total }}</span>
     </script>
     <script type="text/x-template" id="shopping-cart-product">
-      
+
         <tr>
             <td>
              <img src="{{! images[0]['thumb_500'] }}" alt="" class="img-cart">
             </td>
-            
+
             <td>
                 <div class="ellipsis multiline vert-align text-left nam-car">{{! name }}</div>
                 <div class="vert-align up-car">{{! upp }}</div>
@@ -199,7 +199,7 @@
                     <i class="fa fa-trash two remove-from-cart" lp-cart-remove="{{! id }}" aria-hidden="true"></i>
                 </div>
             </td>
-                     
+
         </tr>
     </script>
     <script type="text/x-template" id="shopping-cart-total">
@@ -212,16 +212,16 @@
 
     </script>
     <script type="text/x-template" id="shopping-cart-checkout-form">
-        <div class=""> 
+        <div class="">
             <a class="modal-close pin" data-dismiss="modal" aria-hidden="true">
                <button type="submit" class="btn" style="
                 background-color: rgba(69, 139, 34, 0.68); color:white; width:100%;border-radius: 8px;   margin-bottom: 6px;">Seguir Comprando
                </button>
            </a>
-         
+
         </div>
         <form action="{{! checkout_url}}" method="get" novalidate id="shipping-form" class="myform" onclick="return Validate()">
-            <input name="site_id" class="form-control required" type="hidden" value="4">
+            <input name="site_name" class="form-control required" type="hidden" value="redukcal">
             <input name="cart_id" class="form-control required" type="hidden" value="{{! cart_id}}">
             <div class="form-group mod text-center">
 
@@ -262,7 +262,7 @@
                 var fono = $("#itFono").val();
 
                 var error_count = 0;
- 
+
                 // --- Condicionales anidados ----
                 //Si nombre está vacío
                 //Muestra el mensaje
@@ -319,7 +319,7 @@
                 {
                     return false;
                 }
- 
+
             });//click
         });//ready
     </script>
@@ -356,8 +356,8 @@
                 {
                     var hash = window.location.hash;
                     // window.location.href= hash;
-                    
-                    if (hash !== "") 
+
+                    if (hash !== "")
                     {
                         $('html,body').animate({
                             scrollTop: $(hash).offset().top
@@ -470,13 +470,13 @@
 
 
 
-<script> 
-function revisar() { 
-if(formulario.nombre == "") { alert('Debes poner el nombre') ; return false ; } 
-if(formulario.pais == "") { alert('Debes poner el país') ; return false ; } 
-if(formulario.email == "") { alert('Debes poner el email') ; return false ; } 
-} 
-</script> 
+<script>
+function revisar() {
+if(formulario.nombre == "") { alert('Debes poner el nombre') ; return false ; }
+if(formulario.pais == "") { alert('Debes poner el país') ; return false ; }
+if(formulario.email == "") { alert('Debes poner el email') ; return false ; }
+}
+</script>
 
 <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
